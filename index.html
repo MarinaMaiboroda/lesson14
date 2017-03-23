@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productman</title>
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="form-header">
+			<div class="form-title">
+				<h3>Harold Finch</h3>
+				<p>Your Total</p>
+			</div>
+			<div class="price">$88</div>
+		</div><!-- /.form-header -->
+		<form name="cart-info" id="get_fotm_info" action="">
+			<label for="card_name"> Credit card number</label>
+			<input required id="card_name" type="text" name="" placeholder="Card namber" value="" />
+
+			<label for="date">Expiration date</label>
+			<!-- Для стилизации добавляем обвертку так как на элементы формы не работают псевдо селесторы -->
+			<div class="select-wrap">
+				<select id="date">
+					<optgroup label="Group">
+						<option value="21">21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+					</optgroup>
+					<option selected>25</option>
+					<option>26</option>
+				</select>
+			</div>
+
+			<label for="year">Expiration date</label>
+			<div class="select-wrap">
+				<select id="year">
+					<optgroup label="Group">
+						<option value="21">21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+					</optgroup>
+					<option selected>25</option>
+					<option>26</option>
+				</select>
+			</div>
+
+			<label for="cvv"> CVV</label>
+			<input required id="cvv" type="text"
+				name="" maxlength="3" value="" /><span>3 or 4 digits - view example</span>
+
+			<div class="radiobutton">
+				<input id="radio1" type="radio" name="radio">
+				<label for="radio1">First</label>
+			</div>
+			<div class="radiobutton">
+				<input id="radio2" type="radio" name="radio">
+				<label for="radio2">Second</label>
+			</div>
+			<div class="radiobutton">
+				<input id="radio3" type="radio" name="radio">
+				<label for="radio3">Third</label>
+			</div>
+			<textarea>jhjkhjhjjbjhgjhbuiyhuituguyiuyh</textarea>
+
+			<label for="">
+				<input  type="checkbox" checked="" name="" value=""> I agree
+			</label>
+
+
+				
+			<button type="submit">Pay</button>
+
+			<button type="reset">Cancel order</button>
+			
+		</form>
+	</div>
+</body>
+</html>

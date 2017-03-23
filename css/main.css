@@ -1,0 +1,165 @@
+.wrap{
+	max-width: 337px;
+	width: 100%;
+	margin: auto;
+}
+
+.form-header{
+	padding: 20px;
+	background: #efe4aa;
+	color: #6e7f7b;
+}
+
+.form-title{
+	width: 50%;
+	display: inline-block;
+}
+
+.price{
+	float: right;
+}
+
+label{
+	font-size: 13px;
+	color: #9eabad;
+}
+
+label, button{
+	display: block;
+}
+
+input[type="text"], select{
+	display: block;
+	margin-bottom: 25px;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #b4c1c4;
+	background: #f6f6f6;
+	color: #727f82;
+	font-size: 13px;
+}
+
+input[type="text"]:focus{
+	border-color: #7fcddf;
+	outline: none;
+}
+
+/*Select styles*/
+.select-wrap{
+	position: relative;
+	width: 100%;
+}
+
+.select-wrap:after{
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #727f82;
+	border-bottom: 0;
+	transform: translateY(-50%);
+}
+
+select{
+	/*Добовляем правый паддинг что бы длинный текст не налазил на стрелку*/
+	padding-right: 15px;
+ /*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #727f82;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #727f82;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #727f82;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #727f82;
+}
+
+/*Стили для radiobutton*/
+.radiobutton{
+	position: relative;
+	line-height: 18px;
+
+}
+.radiobutton input{
+	display: none;
+}
+
+.radiobutton label{
+	vertical-align: middle;
+}
+
+.radiobutton label:before{
+	content: "";
+	display: inline-block;
+	margin-right: 5px;
+	background: url('../img/radio.png') no-repeat -107px -32px;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.radiobutton input:checked + label:before{
+	content: "";
+	background: url('../img/radio.png') no-repeat -44px -32px;
+	width: 19px;
+	height: 18px;
+}
+
+button{
+	width: 100%;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+button[type="submit"]{
+	background: #26b167;
+	border: 1px solid #26b167;
+	color: #fff;
+}
+
+button[type="submit"]:focus,
+button[type="submit"]:hover{
+	color: #26b167;
+	background: #fff;
+}
+
+button[type="submit"]:active{
+	background: #26794d;
+	border-color: #26794d;
+}
+
+button[type="reset"]{
+	background: none;
+	border: 1px solid transparent;
+	color: #9eabad;
+}
+
+
+textarea{
+	width: 100%;
+	/*Запрет ресайза*/
+	resize: none;
+}
